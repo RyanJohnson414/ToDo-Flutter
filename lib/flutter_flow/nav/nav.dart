@@ -86,11 +86,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               appStateNotifier.loggedIn ? TasksWidget() : LoginWidget(),
         ),
         FFRoute(
-          name: HomePageWidget.routeName,
-          path: HomePageWidget.routePath,
-          builder: (context, params) => HomePageWidget(),
-        ),
-        FFRoute(
           name: LoginWidget.routeName,
           path: LoginWidget.routePath,
           builder: (context, params) => LoginWidget(),
